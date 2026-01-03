@@ -36,7 +36,7 @@ To run this project locally, follow these steps:
 
 - Clone the repository:
 
-  - git clone https://github.com/RatneshKJaiswal/Banana_Index
+  - git clone https://github.com/Shiv-2018/Banana_Index
   - cd Banana_Index
 
 - Install dependencies:
@@ -101,6 +101,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## 📬 Contact
 
-For questions or suggestions, please reach out to ratnesh.kr.jais@gmail.com.
+For questions or suggestions, please reach out to shivendra992741@gmail.com.
 
 Enjoy using the Banana Freshness Checker! 🍌
