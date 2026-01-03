@@ -68,6 +68,14 @@ def predict():
 
     return jsonify({"freshness_index": round(freshness_index, 2)})
 
+def test_prediction():
+    # Test the prediction function with a sample image
+    sample_image_path = 'sample_banana.jpg'  # Replace with your sample image path
+    image = Image.open(sample_image_path).convert('RGB')
+    freshness_score = predict_freshness(model, image)
+    freshness_index = 100 - ((freshness_score - 1.8) / 5.4) * 100
+    freshness_index = max(0, min(freshness_index, 100))
+    print(f"Freshness Index for sample image: {round(freshness_index, 2)}")
 
 # Start the Flask app using the specified PORT environment variable
 if __name__ == "__main__":
